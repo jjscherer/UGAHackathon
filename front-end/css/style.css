@@ -26,3 +26,13 @@ ul {
     color: white;
     background-color: var(--hdr-color);
 }
+
+.submission{
+    font-family: "Merriweather", serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    border: 2px black;
+    color: black;
+}
