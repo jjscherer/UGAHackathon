@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">`
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <title>Document</title>
+    <script src="script/jquery.min.js"></script>
 </head>
 <body>
     <div class="submission">
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="course">Course Number:</label>
+            <input type="text" id="course" name="course"><br>
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" name="courseTitle"><br>
+            <label for="professor">Professor:</label>
+            <input type="text" id="professor" name="professor"><br>
+            <p>Semester:</p><br>
+            <input type="radio" id="Fall" name="semester">
+            <label for="Fall">Fall</label><br>
+            <input type="radio" id="Spring" name="semester">
+            <label for="Spring">Spring</label><br>
+            <input type="radio" id="Summer" name="semester">
+            <label for="Summer">Summer</label><br>
+            <label for="year">Year:</label>
+            <select>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+            </select><br>
+            <label class="custom-uploader" for="file">Upload Syllabus</label> 
+            <input id="file" accept="application/pdf" name="fileToUpload" type="file" /> 
             <input type="submit" value="Submit">
         </form>
     </div>
