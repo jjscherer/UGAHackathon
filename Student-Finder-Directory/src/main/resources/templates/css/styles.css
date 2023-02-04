@@ -1,0 +1,28 @@
+:root {
+    --main-bg-color: #F08080;
+    --hdr-color: #EF0107;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    font-family: "Merriweather", serif;
+    background-color: black;
+}
+
+.header{
+    font-family: "Merriweather", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--hdr-color);
+}

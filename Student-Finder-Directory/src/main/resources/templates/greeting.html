@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Dawg Directory</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Dawg Directory</h1>
+        </div>
+        <div class="navbar">
+            <form action="#" th:action="@{/sub}" th:object="${greeting}" method="post">
+                <p>Message: <input type="text" th:field="*{content}" /></p>
+                <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+            </form>
+        </div>
+        
+	    <form method="POST" enctype="multipart/form-data">
+            <div><div>
+                <input type="file" name="files"
+                 webkitdirectory multiple></div>
+                <button class="button button4" type="submit">
+                 Upload</button> </div>
+        </form>
+
+    </body>
+</html>
