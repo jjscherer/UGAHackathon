@@ -11,8 +11,29 @@
 <body>
     <div class="submission">
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="course">Course Number:</label>
+            <input type="text" id="course" name="course"><br>
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" name="courseTitle"><br>
+            <label for="professor">Professor:</label>
+            <input type="text" id="professor" name="professor"><br>
+            <p>Semester:</p><br>
+            <input type="radio" id="Fall" name="semester">
+            <label for="Fall">Fall</label><br>
+            <input type="radio" id="Spring" name="semester">
+            <label for="Spring">Spring</label><br>
+            <input type="radio" id="Summer" name="semester">
+            <label for="Summer">Summer</label><br>
+            <label for="year">Year:</label>
+            <select>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+            </select><br>
+            <label class="custom-uploader" for="file">Upload Syllabus</label> 
+            <input id="file" accept="application/pdf" name="fileToUpload" type="file" /> 
             <input type="submit" value="Submit">
         </form>
     </div>
