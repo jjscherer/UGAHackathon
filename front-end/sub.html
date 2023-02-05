@@ -10,6 +10,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">University of Georgia</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Professors.html" class="navbar_links"> Professors </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Syllabus.html" class="navbar_links"> Syllabus </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="sub.html" class="button"> Upload </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="submission">
         <form>
             <label for="course">Course Number:</label>
@@ -33,6 +57,7 @@
                 <option>2020</option>
                 <option>2019</option>
             </select><br>
+            <br></br>
             <label class="custom-uploader" for="file">Upload Syllabus</label> 
             <input id="file" accept="application/pdf" name="fileToUpload" type="file" /> 
             <input type="submit" value="Submit">

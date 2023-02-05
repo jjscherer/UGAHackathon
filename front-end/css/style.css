@@ -210,15 +210,16 @@ ul {
     justify-content: center;
     align-items:center;
     text-decoration: none;
-    background-color: white;
+    background-color: white;;
     border: none;
     outline: none;
     color: black;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    border-radius: 4px;
-    background: #fff;
-    color: rgb(223, 97, 97); 
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #ba0c2f;
+    color: rgb(255, 255, 255); 
 }
 
 form.submission{
