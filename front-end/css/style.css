@@ -17,7 +17,6 @@ body{
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
 }
 
 .navbar {
@@ -228,4 +227,71 @@ form.submission{
     justify-content: center;
     align-items:center;
 }
+.finder{
+    font-family: "Merriweather", serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    border: 1px black;
+    color: black;
+    padding-top: 20%;
+}
+.finder2{
+    font-family: "Merriweather", serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    border: 1px black;
+    color: black;
+    padding-top: 20%;
+}
+.class1{
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    display: flex;
+    border: 1px black;
+    color: black;
+    padding-top: 10px;
+}
 
+.class2{
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    display: flex;
+    border: 1px black;
+    color: black;
+}
+
+.class3{
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    display: flex;
+    border: 1px black;
+    color: black;
+}
+
+.color {
+    display: flex;
+    background-color: #F08080;
+    justify-content: space-between;
+    padding-top: 2%;
+    margin-right: 40px;
+    font-size: 40px;
+}
+.lastName {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-style: oblique;
+}
+.courseName {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-style: oblique;
+}
