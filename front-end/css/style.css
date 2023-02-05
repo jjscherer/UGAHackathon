@@ -228,26 +228,7 @@ form.submission{
     justify-content: center;
     align-items:center;
 }
-.finder{
-    font-family: "Merriweather", serif;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    background-color: white;
-    border: 1px black;
-    color: black;
-    padding-top: 20%;
-}
-.finder2{
-    font-family: "Merriweather", serif;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    background-color: white;
-    border: 1px black;
-    color: black;
-    padding-top: 20%;
-}
+
 .class1{
     font-size: 20px;
     font-family: "Merriweather", serif;
@@ -289,10 +270,36 @@ form.submission{
     font-size: 20px;
     font-family: "Merriweather", serif;
     font-style: oblique;
+    font-weight: 900;
 }
 .courseName {
     display: flex;
     font-size: 20px;
     font-family: "Merriweather", serif;
     font-style: oblique;
+    font-weight: 900;
+}
+.Barnes {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+}
+.Cotterell {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+}
+.Lamacara {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+}
+.Stephens {
+    display: flex;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
 }
