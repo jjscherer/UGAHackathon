@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    --main-bg-color: #F08080;
-    --hdr-color: #EF0107;
+    --main-bg-color: #ba0c2f;
+    --hdr-color: #ba0c2f;
+    --font-general: "Unbounded";
 }
 
 body{
-    background-color: var(--main-bg-color);
+    background-color: #ba0c2f;
 }
 
 ul {
@@ -13,32 +20,209 @@ ul {
 }
 
 .navbar {
-    font-family: "Merriweather", serif;
-    background-color: black;
+    font-family: var(--font-general), serif;
+    background-color: #2c2a29;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-.header{
-    font-family: "Merriweather", serif;
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo {
+    background-color: #fff;
+    background-image: linear-gradient (to top, #fff, 0%, #ffb1, 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item {
+    height: 90px;
+}
+
+.navbar_links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    height: 100%;
+
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ad717d;
+    color: #fff;
+}
+
+.navbar_links:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        /*top: -10000px;
+        opacity: 0; */
+        transition: all 0.5 ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar_menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo {
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar_item {
+        width: 100%
+    }
+
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate (5%, 20%);
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+.header {
+    font-family: var(--font-general), serif;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: var(--hdr-color);
+    background-color:#ba0c2f;
+    padding-top: 1%;
 }
 
+.content {
+    font-family: var(--font-general), serif;
+    display: flex;
+    justify-content: left;
+    color: black;
+    padding-top: 20%;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+
 .submission{
-    font-family: "Merriweather", serif;
+    font-family: var(--font-general), serif;
     display: flex;
     justify-content: center;
     align-items:center;
+    text-decoration: none;
     background-color: white;
-    border: 1px black;
+    border: none;
+    outline: none;
     color: black;
-    padding: 1px 1px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    border-radius: 4px;
+    background: #fff;
+    color: rgb(223, 97, 97); 
 }
 
 form.submission{
-    font-family: "Merriweather", serif;
+    font-family: var(--font-general), serif;
     display: flex;
     justify-content: center;
     align-items:center;
