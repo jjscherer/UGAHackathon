@@ -1,11 +1,14 @@
 package com.example.StudentFinderDirectory;
  
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
  
+@Document("file")
 public class File {
     // @Id annotation specifies the
     // primary key of an entity
