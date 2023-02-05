@@ -2,7 +2,7 @@ package com.example.StudentFinderDirectory;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public class SimpleMongoRepository implements MongoRepository<File, String>{
+/*public class SimpleMongoRepository implements MongoRepository<File, String>{
     private FileRepository repo;
 
     public void addFile(File file) {
@@ -12,4 +12,4 @@ public class SimpleMongoRepository implements MongoRepository<File, String>{
     public void saveAll(File file) {
         repo.
     }
-}
+}*/
